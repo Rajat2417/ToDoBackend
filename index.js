@@ -12,7 +12,7 @@ app.use(cors({
   }));
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json())
+app.use(express.json());
 app.use('/', router)
 app.use('/todo/', todo_router)
 
